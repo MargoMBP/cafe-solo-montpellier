@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Solo | Ateliers & Événements</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay-backdrop" id="backdrop"></div>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="logo-solo.png" alt="Logo Café Solo" class="logo-img">Café Solo<span>.</span></a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="ateliers.html" class="nav-link active">Ateliers</a>
+                <a href="boutique.html" class="nav-link">Boutique</a>
+                <a href="galerie.html" class="nav-link">Galerie</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+    <section class="section-padded">
+        <div class="container split-layout" style="align-items: start;"> <div class="ateliers-left-column">
+                <div class="ateliers-text">
+                    <span class="section-subtitle">Partage et transmission</span>
+                    <h2 class="font-hagrid">Ateliers & Événements</h2>
+                    <p>Rejoignez nos sessions de dégustation sensorielle ou apprenez les secrets d'un motif parfait sur mousse de lait lors de nos ateliers du samedi matin.</p>
+                    <div class="event-badge" style="margin-bottom: 2.5rem;">Prochain événement : Peinture sur Céramique — Mercredi 24 juin de 10h00 à 16h00</div>
+                </div>
+                
+                <div class="ateliers-image-wrap">
+                    <img src="atelier 1.jpg" alt="Session de formation Latte Art au Café Solo">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Réserver un atelier</h3>
+                <form class="simple-form" onsubmit="event.preventDefault(); alert('Réservation enregistrée !');">
+                    <div class="form-group">
+                        <label>Choisir la session</label>
+                        <select required>
+                            <option>Atelier Peinture sur Céramique - 45€</option>
+                            <option>Dégustation "Délices" du Moment - 30€</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><label>Date</label><input type="date" required></div>
+                    <div class="form-group"><label>Votre Email</label><input type="email" placeholder="nom@exemple.com" required></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Réserver ma place</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <script src="script.js"></script>
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div>
+                <p>&copy; 2026 Café Solo Montpellier. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="cookies.html">Gestion des cookies</a>
+                    <a href="dashboard.html" style="font-weight:600; color:var(--color-primary);">Espace Admin</a>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/cafesolomontpellier/" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                <a href="https://www.facebook.com/cafesolomontpellier" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
