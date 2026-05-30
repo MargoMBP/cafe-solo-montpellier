@@ -1,1 +1,1 @@
-# cafe-solo.github.io.
+# cafe-solo
